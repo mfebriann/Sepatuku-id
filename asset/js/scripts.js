@@ -22,11 +22,17 @@ window.addEventListener('load', function(){
 // Cart Alert
 const cart = document.querySelector('.fa-shopping-cart');
 cart.addEventListener('click', function cart() {
-    alert('Kamu belum belanja apapun!');
+    alert('Kamu belum belanja apapun :(');
 });
 
 // Heart Alert 
 const heart = document.querySelector('.fa-heart');
 heart.addEventListener('click', function heart() {
     alert('Terima kasih telah menyukai website ini :D')
+})
+
+// Button Alert 
+const langganan = document.querySelector('#button');
+langganan.addEventListener('click',function button() {
+    alert('Terima kasih telah berlangganan')
 })

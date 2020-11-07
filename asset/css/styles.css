@@ -615,7 +615,7 @@ footer .wrap-footer form i {
   top: 3px;
 }
 
-footer .wrap-footer form button {
+footer .wrap-footer form #button {
   padding: 6px 8px;
   cursor: pointer;
   background-color: #CC0000;
