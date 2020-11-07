@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 639px) {
-    .contact {
+    form {
         justify-content: flex-start !important;
     }
 }
@@ -239,7 +239,7 @@
 
     // Footer
     .wrap-footer {
-        .contact {
+        form {
             justify-content: flex-start !important;
 
             i {

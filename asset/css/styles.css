@@ -64,6 +64,7 @@
   margin: 0 10px;
   font-size: 1.4em;
   color: #fff;
+  z-index: 9999;
 }
 
 .navigation nav .menu .icon .fas {
@@ -211,7 +212,7 @@
           flex-direction: column;
   border: 3px solid black;
   border-right: none;
-  z-index: 99999;
+  z-index: 90;
 }
 
 .hero .text .sosmed li {
@@ -561,6 +562,7 @@ footer .wrap-footer .description h4 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.2em;
+  color: #fff;
 }
 
 footer .wrap-footer ul {
@@ -583,34 +585,46 @@ footer .wrap-footer ul li a:hover {
   color: #8a348a;
 }
 
-footer .wrap-footer .contact {
+footer .wrap-footer form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 8px;
 }
 
-footer .wrap-footer .contact input {
+footer .wrap-footer form input {
   outline: none;
+  border: none;
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 0 5px 33px;
 }
 
-footer .wrap-footer .contact i {
+footer .wrap-footer form i {
   cursor: pointer;
-  color: #fff;
-  font-size: 24px;
-  background-color: #fff;
-  padding: 3px 8px;
-  background-color: #333;
+  color: #333;
+  font-size: 22px;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+}
+
+footer .wrap-footer form button {
+  padding: 6px 8px;
+  cursor: pointer;
+  background-color: #CC0000;
+  border: none;
+  letter-spacing: .5px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 footer .row {
@@ -783,7 +797,7 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
 }
 
 @media (max-width: 639px) {
-  .contact {
+  form {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
@@ -878,12 +892,12 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
     -webkit-clip-path: circle(350px at right);
             clip-path: circle(350px at right);
   }
-  .wrap-footer .contact {
+  .wrap-footer form {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
   }
-  .wrap-footer .contact i {
+  .wrap-footer form i {
     margin-top: 10px;
   }
 }

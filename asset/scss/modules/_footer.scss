@@ -23,6 +23,7 @@ footer {
                 font-family: $Roboto-font;
                 text-transform: uppercase;
                 font-size: 1.2em;
+                color: #fff;
             }
         }
 
@@ -44,31 +45,44 @@ footer {
             }
         }
 
-        .contact {
+        form {
+            position: relative;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             gap: 8px;
 
 
             input {
                 outline: none;
+                border: none;
                 font-size: 16px;
-                padding: 5px;
+                padding: 5px 0 5px 33px;
             }
 
             i {
                 cursor: pointer;
-                color: #fff;
-                font-size: 24px;
-                background-color: #fff;
-                padding: 3px 8px;
-                background-color: #333;
+                color: #333;
+                font-size: 22px;
+                position: absolute;
+                left: 5px;
+                top: 3px;
+            }
+
+            button {
+                padding: 6px 8px;
+                cursor: pointer;
+                background-color: #CC0000;
+                border: none;
+                letter-spacing: .5px;
+                font-family: $Roboto-font;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
             }
         }
-
     }
+
 
     .row {
         border-bottom: 2px solid black;
