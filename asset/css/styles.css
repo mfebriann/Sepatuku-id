@@ -788,6 +788,18 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer form {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
 }
 
 @media (max-width: 612px) {
@@ -896,9 +908,6 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
-  }
-  .wrap-footer form i {
-    margin-top: 10px;
   }
 }
 

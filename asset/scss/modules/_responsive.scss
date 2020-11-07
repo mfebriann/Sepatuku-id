@@ -106,6 +106,12 @@
                 }
             }
         }
+
+        form {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            justify-content: flex-start !important;
+        }
     }
 }
 
@@ -241,10 +247,6 @@
     .wrap-footer {
         form {
             justify-content: flex-start !important;
-
-            i {
-                margin-top: 10px;
-            }
         }
     }
 }
