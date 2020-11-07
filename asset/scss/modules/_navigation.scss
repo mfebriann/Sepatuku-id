@@ -1,0 +1,113 @@
+$Poppins-font: 'Poppins',
+sans-serif;
+
+// Bagian navigation
+.navigation {
+    width: 100%;
+    background-color: rgb(83, 83, 240);
+    padding: 15px 0;
+    position: relative;
+    z-index: 99;
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h1 {
+            font-size: 1.9em;
+            letter-spacing: .6px;
+
+            & sup {
+                font-weight: 300;
+                color: #333;
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $Poppins-font;
+            text-transform: uppercase;
+
+            .links {
+                margin: 0 15px;
+                font-size: 1.1rem;
+                transition: all 200ms ease-in-out;
+
+
+                &:hover {
+                    color: rgba(51, 51, 51, .7)
+                }
+            }
+
+            .icon {
+                margin: 0 10px;
+                font-size: 1.4em;
+
+
+                .fas {
+                    transition: all 300ms ease-in-out;
+
+                }
+
+                & .fa-heart:hover {
+                    color: rgb(255, 17, 156);
+                }
+
+                & .fa-shopping-cart:hover {
+                    color: gray;
+                }
+            }
+        }
+
+        // List Menu / Hamburger Menu 
+        .list-menu {
+            height: 30px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+
+            span {
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                transition: all 250ms ease-in-out;
+            }
+
+            input {
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                left: 1px;
+                cursor: pointer;
+                opacity: 0;
+                z-index: 99;
+            }
+
+            input:checked~span:nth-child(2) {
+                transform: rotate(-45deg) translate(0, 11px);
+                background-color: rgb(110, 110, 110);
+
+            }
+
+            input:checked~span:nth-child(3) {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            input:checked~span:nth-child(4) {
+                transform: rotate(45deg) translate(0, -12px);
+                background-color: rgb(110, 110, 110);
+
+            }
+        }
+    }
+}

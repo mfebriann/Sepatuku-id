@@ -1,0 +1,297 @@
+// Responsive Breakpoint
+@media (width:1024px) {
+    .hero {
+        margin-top: -120px;
+
+        .text {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .hero {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+}
+
+
+@media (max-width:876px) {
+
+    // Navigation
+    .navigation {
+        nav {
+            justify-content: space-around;
+
+            .menu-links {
+                display: flex;
+                flex-direction: column;
+                visibility: hidden;
+                padding: 10px 0;
+                position: absolute;
+                background-color: rgb(110, 110, 110);
+                top: 100%;
+                right: 0;
+                left: 0;
+                z-index: 99;
+                opacity: 0;
+                transition: 300ms ease-in-out;
+
+                &.muncul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                li {
+                    padding: 10px 0;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        display: block;
+                        position: relative;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .list-menu {
+                display: flex;
+            }
+
+            .icons {
+                background-color: rgb(83, 83, 240);
+                width: 100%;
+                justify-content: space-around;
+                position: fixed;
+                bottom: 0;
+                padding: 15px;
+            }
+        }
+    }
+
+    // Hero
+    .hero {
+        padding: 0 40px;
+        margin-top: -80px;
+
+
+        h2 {
+            text-align: center !important;
+        }
+    }
+
+    .bg-circle {
+        clip-path: circle(500px at right);
+    }
+
+    // Footer 
+    footer {
+        margin-bottom: 6vh;
+
+        .wrap-footer {
+            justify-items: flex-start;
+
+            .description {
+                align-items: flex-start !important;
+
+                ul {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 612px) {
+    .img img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 639px) {
+    .contact {
+        justify-content: flex-start !important;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .hero {
+        text-align: center;
+
+        .text {
+            h2 {
+                font-size: 2.3em;
+            }
+
+            p {
+                font-size: 1em;
+                margin-top: -40px;
+            }
+
+            .sosmed {
+                flex-direction: row;
+                justify-content: center;
+                position: relative;
+                top: 25vh;
+                right: 3vw;
+                border: none;
+                align-items: center;
+
+                li {
+
+                    i {
+                        border-bottom: none;
+                        background-color: transparent;
+                        width: 20%;
+                    }
+
+                    .fa-github:hover,
+                    .fa-linkedin:hover,
+                    .fa-medium:hover {
+                        background-color: transparent;
+                    }
+
+                    .fa-github:hover {
+                        color: rgb(36, 41, 46);
+                    }
+
+                    .fa-medium:hover {
+                        color: #000;
+                    }
+
+                    .fa-linkedin:hover {
+                        color: #0073B1;
+                    }
+                }
+            }
+        }
+
+        .img img {
+            max-width: 320px;
+            margin-top: 80px;
+        }
+
+
+    }
+
+    .bg-circle {
+        clip-path: circle(300px at right);
+    }
+
+    // Testimo
+    .testimonials {
+        padding: 0;
+
+        .card-testimonial {
+            width: 80%;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+
+        }
+    }
+}
+
+
+@media (max-width:360px) {
+    .hero {
+
+        .text {
+
+            .sosmed {
+                top: 30vh;
+            }
+        }
+    }
+}
+
+@media (max-width:340px) {
+    .hero {
+        .text h2 {
+            font-size: 2em;
+        }
+
+        .img img {
+            max-width: 300px;
+        }
+
+        .text {
+
+            .sosmed {
+                top: 30vh;
+            }
+        }
+    }
+
+    .bg-circle {
+        clip-path: circle(350px at right);
+    }
+
+    // Footer
+    .wrap-footer {
+        .contact {
+            justify-content: flex-start !important;
+
+            i {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (width: 320px) {
+    .hero {
+        .text {
+            .sosmed {
+                top: 35vh;
+            }
+        }
+    }
+
+    .testimonials {
+        .card-testimonial {
+            width: 65% !important;
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .produk {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+
+        .card img {
+            width: 200px;
+        }
+    }
+
+    .testimonials {
+        .card-testimonial {
+            width: 60% !important;
+        }
+    }
+
+    .merek h3 {
+        font-size: 3em !important;
+    }
+
+    .merek img {
+        width: 200px;
+    }
+
+    .hero img {
+        width: 280px;
+    }
+
+
+}
