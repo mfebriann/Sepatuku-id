@@ -768,8 +768,8 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
     text-align: center !important;
   }
   .bg-circle {
-    -webkit-clip-path: circle(500px at right);
-            clip-path: circle(500px at right);
+    -webkit-clip-path: circle(500px at right 500px);
+            clip-path: circle(500px at right 500px);
   }
   footer {
     margin-bottom: 6vh;
@@ -867,8 +867,8 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
     margin-top: 80px;
   }
   .bg-circle {
-    -webkit-clip-path: circle(300px at right);
-            clip-path: circle(300px at right);
+    -webkit-clip-path: circle(400px at right 400px);
+            clip-path: circle(400px at right 400px);
   }
   .testimonials {
     padding: 0;
@@ -899,10 +899,6 @@ footer .copyright .footer-sosmed li a .fa-linkedin:hover {
   }
   .hero .text .sosmed {
     top: 30vh;
-  }
-  .bg-circle {
-    -webkit-clip-path: circle(350px at right);
-            clip-path: circle(350px at right);
   }
   .wrap-footer form {
     -webkit-box-pack: start !important;

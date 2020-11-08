@@ -88,7 +88,7 @@
     }
 
     .bg-circle {
-        clip-path: circle(500px at right);
+        clip-path: circle(500px at right 500px);
     }
 
     // Footer 
@@ -191,7 +191,7 @@
     }
 
     .bg-circle {
-        clip-path: circle(300px at right);
+        clip-path: circle(400px at right 400px);
     }
 
     // Testimo
@@ -239,9 +239,6 @@
         }
     }
 
-    .bg-circle {
-        clip-path: circle(350px at right);
-    }
 
     // Footer
     .wrap-footer {
